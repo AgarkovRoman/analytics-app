@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Потоки данных</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wraper">
+            <div class="user">
+                <a class="user-link" href="#">
+                    <div class="user-icon">
+                        <img class="user-icon__img" src="./img/person-circle-outline.svg" alt="user-icon">
+                    </div>
+                    <div class="user-information">
+                        <div class="user-email">
+                            <p>example@gmail.com</p>
+                        </div>
+                        <div class="user-name">
+                            <p>username</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wraper">
+            <h1 class="title">Потоки данных</h1>
+            <ol class="breadcrumbs">
+                <li class="breadcrumbs__link">Инструменты</li>
+                <li class="breadcrumbs__link">Фиды</li>
+                <li class="breadcrumbs__link">Потоки данных</li>
+            </ol>
+            <div class="main-frame">
+                <div class="main-search">
+                    <div class="main-search__filter">
+                        <img src="./img/filter-outline.svg" alt="filter-icon">
+                    </div>
+                    <div class="main-search__input">
+                        <p><span class="search-filter-items">Активно, Неактивно, Удалено (статус)</span></p>
+                    </div>
+                    <div class="main-search__reload">
+                        <img src="./img/reload-circle-outline.svg" alt="reload-icon">
+                    </div>
+                </div>
+                <div class="feads">
+                    <h2 class="titlefeads">Фиды (за сегодня)</h2>
+                    <div class="feads__success">
+                        <h4>Успешно</h4>
+                        <div class="value">0</div>
+                    </div>
+                    <div class="feads__unsuccess">
+                        <h4>Не успешно</h4>
+                        <div class="value">0</div>
+                    </div>
+                </div>
+                <ul class="feads-type">
+                    <li class="feads-type__item"><a href="#">Все</a></li>
+                    <li class="feads-type__item"><a href="#">Ручные</a></li>
+                    <li class="feads-type__item"><a href="#">Автоматические</a></li>
+                </ul>
+                <hr>
+                <div class="data-flows">
+                    <h5>Потоки данных</h5>
+                    <div class="main-box">
+                        <div class="btn-box">
+                            <button class="btn-box__button">+ Поток данных</button>
+                            <div class="btn-box__search">
+                                <img src="./img/search-outline.svg" alt="search-feads-icon">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="data-box">
+                            <p>Нет данных</p>
+                        </div>
+                        <div class="pages-box">
+                            <p>Строк на странице:</p>
+                            <select id="pages">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>
