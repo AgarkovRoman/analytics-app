@@ -343,6 +343,7 @@ template, [hidden] {
   padding: 1rem 1.1rem;
 }
 
+<<<<<<< HEAD
 .hello-box-divider {
   position: relative;
   margin: 0 0 1rem;
@@ -368,6 +369,8 @@ template, [hidden] {
   color: #a5b2bc;
 }
 
+=======
+>>>>>>> cdbfe824d0a1df99322ff59724050cd98148fe91
 .form-group {
   margin-bottom: 1rem;
 }
