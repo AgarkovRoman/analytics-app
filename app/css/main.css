@@ -343,6 +343,31 @@ template, [hidden] {
   padding: 1rem 1.1rem;
 }
 
+.hello-box-divider {
+  position: relative;
+  margin: 0 0 1rem;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.hello-box-divider::before {
+  position: absolute;
+  content: "";
+  height: .07rem;
+  top: 50%;
+  background-color: rgba(165, 178, 188, 0.25);
+  left: -1.07rem;
+  right: -1.07rem;
+}
+
+.hello-box-divider__value {
+  position: relative;
+  z-index: 3;
+  background-color: #fff;
+  padding: 0 .4rem;
+  color: #a5b2bc;
+}
+
 .form-group {
   margin-bottom: 1rem;
 }
