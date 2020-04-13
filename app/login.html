@@ -13,33 +13,29 @@
 <body>
     <div class="login-form-wrap">
         <div class="hello-box">
-            <h4>Вход</h4>
-            <form class="hello-box-form">
-                <div class="form-group">
-                    <label class="form-label" for="Email">Email</label>
-                    <input class="form-input" type="text" tabindex="1" placeholder="Введите Email">
+            <h4 class="hello-box__title">Вход</h4>
+            <form class="form">
+                <div class="form__group">
+                    <label class="form__label" for="Email">Email</label>
+                    <input class="form__input" type="text" tabindex="1" placeholder="Введите Email">
                 </div>
-                <div class="form-group">
-                    <label class="form-label" for="Password">Пароль</label>
-                    <input class="form-input" type="password" tabindex="2" placeholder="Введите пароль">
+                <div class="form__group">
+                    <label class="form__label" for="Password">Пароль</label>
+                    <input class="form__input" type="password" tabindex="2" placeholder="Введите пароль">
                 </div>
-                <div class="form-group">
-                    <button class="button-login" type="submit">Войти</button>
+                <div class="form__group">
+                    <button class="button form__button button--blue" type="submit">Войти</button>
                 </div>
-                <div class="hello-box-divider">
-                    <span class="hello-box-divider__value">или с помощью</span>
+                <div class="devider form__divider">
+                    <span class="divider__value">или с помощью</span>
                 </div>
-                <div class="hello-box-socials">
-                    <div class="hello-box-socials__items">
-                        <button class="btn" type="button" data-social="facebook">
-                            <span>Facebook</span>
-                        </button>
-                    </div>
-                    <div class="hello-box-socials__items">
-                        <button class="btn" type="button" data-social="vk">
-                            <span>Вконтакте</span>
-                        </button>
-                    </div>
+                <div class="form__socials-buttons">
+                    <button class="button-socials" type="button" data-social="facebook">
+                        <span>Facebook</span>
+                    </button>
+                    <button class="button-socials" type="button" data-social="vk">
+                        <span>Вконтакте</span>
+                    </button>
                 </div>
             </form>
         </div>

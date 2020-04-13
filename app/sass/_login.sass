@@ -18,7 +18,46 @@ $main-blue-color: #2161eb
     border-radius: 1rem
     padding: 1rem 1.1rem
 
-.hello-box-divider
+.form__group
+    margin-bottom: 1rem
+
+    .form__label
+        display: block
+        margin-bottom: 0.13rem
+        font-size: .8rem
+        font-weight: 500
+
+    .form__input
+        width: 100%
+        border-radius: .5rem
+        padding: 0.563rem 0.813rem
+        vertical-align: top
+        margin: 0
+        font-size: 1rem
+        line-height: 1.25rem
+        border: .13rem solid rgba(165,178,188,.3)
+        transition: border-color .1s,border-width .1s
+        &:active,&:focus
+            border-color: $main-blue-color
+
+    .button
+        padding: 1rem 1.25rem 0.9rem
+        min-height: 3.1rem
+        border-radius: 0.6rem
+        font-size: 1rem
+        line-height: 1.25rem
+        border: .13rem solid rgba(165,178,188,.3)
+        color: #fff
+        outline: none
+        cursor: pointer
+    .form__button
+        width: 100%
+    .button--blue
+        background-color: $main-blue-color
+        &:hover
+            border: .13rem solid  $main-blue-color
+
+.form__divider
     position: relative
     margin: 0 0 1rem
     font-size: .8rem
@@ -33,71 +72,32 @@ $main-blue-color: #2161eb
         left: -1.07rem
         right: -1.07rem
 
-.hello-box-divider__value
+.divider__value
     position: relative
     z-index: 3
     background-color: #fff
     padding: 0 .4rem
     color: #a5b2bc
 
-.form-group
-    margin-bottom: 1rem
-
-.form-label
-    display: block
-    margin-bottom: 0.13rem
-    font-size: .8rem
-    font-weight: 500
-
-.form-input
-    width: 100%
-    border-radius: .5rem
-    padding: 0.563rem 0.813rem
-    vertical-align: top
-    margin: 0
-    font-size: 1rem
-    line-height: 1.25rem
-    border: .13rem solid rgba(165,178,188,.3)
-    transition: border-color .1s,border-width .1s
-    &:active,&:focus
-        border-color: $main-blue-color
-
-.button-login
-    width: 100%
-    padding: 1rem 1.25rem 0.9rem
-    min-height: 3.1rem
-    border-radius: 0.6rem
-    font-size: 1rem
-    line-height: 1.25rem
-    background-color: $main-blue-color
-    border: .13rem solid rgba(165,178,188,.3)
-    color: #fff
-    outline: none
-    cursor: pointer
-    &:hover
-        border: .13rem solid  $main-blue-color
-
-.hello-box-socials
+.form__socials-buttons
     display: flex
     flex-wrap: wrap
     justify-content: space-around
 
-.hello-box-socials__items
-    .btn
+    .button-socials
         position: relative
         padding: .5rem 1rem
         height: 2.73rem
         border-radius: .5rem
         cursor: pointer
+        &[data-social="facebook"]
+            color: #fff
+            background: #4267b2
+            &:hover
+                background: #375591
 
-    .btn[data-social="facebook"]
-        color: #fff
-        background: #4267b2
-        &:hover
-            background: #375591
-
-    .btn[data-social="vk"]
-        color: #fff
-        background: #45668e
-        &:hover
-            background: #3a577a
+        &[data-social="vk"]
+            color: #fff
+            background: #45668e
+            &:hover
+                background: #3a577a
