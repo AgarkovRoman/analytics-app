@@ -332,6 +332,7 @@ template, [hidden] {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #141024;
 }
 
 .hello-box {
