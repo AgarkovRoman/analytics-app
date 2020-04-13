@@ -49,7 +49,6 @@ $main-blue-color: #2161eb
     font-weight: 500
 
 .form-input
-    // position: relative
     width: 100%
     border-radius: .5rem
     padding: 0.563rem 0.813rem
@@ -58,8 +57,6 @@ $main-blue-color: #2161eb
     font-size: 1rem
     line-height: 1.25rem
     border: .13rem solid rgba(165,178,188,.3)
-    // resize: vertical
-    outline: none
     transition: border-color .1s,border-width .1s
     &:active,&:focus
         border-color: $main-blue-color
@@ -78,3 +75,28 @@ $main-blue-color: #2161eb
     cursor: pointer
     &:hover
         border: .13rem solid  $main-blue-color
+
+.hello-box-socials
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+
+.hello-box-socials__items
+    .btn
+        position: relative
+        padding: .5rem 1rem
+        height: 2.73rem
+        border-radius: .5rem
+        cursor: pointer
+
+    .btn[data-social="facebook"]
+        color: #fff
+        background: #4267b2
+        &:hover
+            background: #375591
+
+    .btn[data-social="vk"]
+        color: #fff
+        background: #45668e
+        &:hover
+            background: #3a577a

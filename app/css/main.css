@@ -343,7 +343,6 @@ template, [hidden] {
   padding: 1rem 1.1rem;
 }
 
-<<<<<<< HEAD
 .hello-box-divider {
   position: relative;
   margin: 0 0 1rem;
@@ -369,8 +368,6 @@ template, [hidden] {
   color: #a5b2bc;
 }
 
-=======
->>>>>>> cdbfe824d0a1df99322ff59724050cd98148fe91
 .form-group {
   margin-bottom: 1rem;
 }
@@ -391,7 +388,6 @@ template, [hidden] {
   font-size: 1rem;
   line-height: 1.25rem;
   border: 0.13rem solid rgba(165, 178, 188, 0.3);
-  outline: none;
   -webkit-transition: border-color .1s,border-width .1s;
   -o-transition: border-color .1s,border-width .1s;
   transition: border-color .1s,border-width .1s;
@@ -419,9 +415,49 @@ template, [hidden] {
   border: 0.13rem solid #2161eb;
 }
 
+.hello-box-socials {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.hello-box-socials__items .btn {
+  position: relative;
+  padding: .5rem 1rem;
+  height: 2.73rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.hello-box-socials__items .btn[data-social="facebook"] {
+  color: #fff;
+  background: #4267b2;
+}
+
+.hello-box-socials__items .btn[data-social="facebook"]:hover {
+  background: #375591;
+}
+
+.hello-box-socials__items .btn[data-social="vk"] {
+  color: #fff;
+  background: #45668e;
+}
+
+.hello-box-socials__items .btn[data-social="vk"]:hover {
+  background: #3a577a;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
 }
 
 .clearfix {
